@@ -1,13 +1,22 @@
 """Train the modified ResNet on CIFAR-10 training images only.
 
+Each run writes everything to runs/<run-name>/:
+    config.json   hyper-parameters of this run
+    train_log.txt console output
+    history.json  per-epoch metrics
+    summary.json  best val acc / epoch, parameter count
+    best.pt, last.pt
+
 Example:
-    python train.py --epochs 100              # 90/10 train/val split
-    python train.py --epochs 100 --val-frac 0 # train on all 50k images
+    python train.py --epochs 100 --run-name run01_baseline              # 90/10 train/val split
+    python train.py --epochs 100 --val-frac 0 --run-name run05_full50k  # train on all 50k images
 """
 import argparse
 import json
 import os
+import sys
 import time
+from datetime import datetime
 
 import numpy as np
 import torch
@@ -29,7 +38,9 @@ def get_args():
     p.add_argument("--cutout", type=int, default=8, help="cutout square size, 0 disables")
     p.add_argument("--val-frac", type=float, default=0.1, help="fraction of train data held out for validation")
     p.add_argument("--seed", type=int, default=42)
-    p.add_argument("--out", default=os.path.join(ROOT, "checkpoints"))
+    p.add_argument("--run-name", default=None, help="output folder name (default: run_<timestamp>)")
+    p.add_argument("--runs-dir", default=os.path.join(ROOT, "runs"), help="parent folder of all runs")
+    p.add_argument("--overwrite", action="store_true", help="allow reusing an existing run folder")
     p.add_argument("--max-steps", type=int, default=0, help="debug: stop each epoch after N steps")
     return p.parse_args()
 
@@ -40,6 +51,18 @@ def get_device():
     if torch.backends.mps.is_available():
         return torch.device("mps")
     return torch.device("cpu")
+
+
+class Logger:
+    """Print to the console and append to <run_dir>/train_log.txt."""
+
+    def __init__(self, path):
+        self.f = open(path, "a")
+
+    def __call__(self, msg):
+        print(msg, flush=True)
+        self.f.write(msg + "\n")
+        self.f.flush()
 
 
 @torch.no_grad()
@@ -58,7 +81,16 @@ def main():
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
     device = get_device()
-    os.makedirs(args.out, exist_ok=True)
+    args.run_name = args.run_name or datetime.now().strftime("run_%Y%m%d_%H%M%S")
+    run_dir = os.path.join(args.runs_dir, args.run_name)
+    if os.path.exists(os.path.join(run_dir, "config.json")) and not args.overwrite:
+        sys.exit(f"{run_dir} already exists; choose another --run-name or pass --overwrite")
+    os.makedirs(run_dir, exist_ok=True)
+    with open(os.path.join(run_dir, "config.json"), "w") as f:
+        json.dump(vars(args), f, indent=1)
+    log = Logger(os.path.join(run_dir, "train_log.txt"))
+    log(f"run: {args.run_name}  ({run_dir})")
+    log("config: " + json.dumps(vars(args)))
 
     x, y = load_train()
     (xtr, ytr), val = split_train_val(x, y, args.val_frac, args.seed)
@@ -68,11 +100,11 @@ def main():
     xtr_t, ytr_t = to_tensor(xtr, mean, std, device), torch.from_numpy(ytr).to(device)
     if val is not None:
         xva_t, yva_t = to_tensor(val[0], mean, std, device), torch.from_numpy(val[1]).to(device)
-    print(f"device={device}  train={len(ytr)}  val={0 if val is None else len(val[1])}")
+    log(f"device={device}  train={len(ytr)}  val={0 if val is None else len(val[1])}")
 
     model = ResNet(dropout=args.dropout).to(device)
     n_params = count_params(model)
-    print(f"Trainable parameters: {n_params:,}")
+    log(f"Trainable parameters: {n_params:,}")
     assert n_params <= PARAM_LIMIT, "model exceeds the 5M parameter limit"
 
     # no weight decay on BN / bias parameters
@@ -92,7 +124,7 @@ def main():
     scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
 
     ckpt_meta = {"mean": mean.tolist(), "std": std.tolist(), "args": vars(args), "params": n_params}
-    history, best_acc = [], -1.0
+    history, best_acc, best_epoch = [], -1.0, 0
     for epoch in range(1, args.epochs + 1):
         model.train()
         t0 = time.time()
@@ -118,20 +150,25 @@ def main():
         if val is not None:
             rec["val_acc"], rec["val_loss"] = evaluate(model, xva_t, yva_t)
         history.append(rec)
-        print("  ".join(f"{k}={v:.4f}" if isinstance(v, float) else f"{k}={v}" for k, v in rec.items()), flush=True)
+        log("  ".join(f"{k}={v:.4f}" if isinstance(v, float) else f"{k}={v}" for k, v in rec.items()))
+        with open(os.path.join(run_dir, "history.json"), "w") as f:
+            json.dump(history, f, indent=1)
 
         state = {"model": model.state_dict(), "epoch": epoch, **ckpt_meta}
-        torch.save(state, os.path.join(args.out, "last.pt"))
+        torch.save(state, os.path.join(run_dir, "last.pt"))
         score = rec.get("val_acc", epoch)  # without validation, the latest epoch is kept
         if score > best_acc:
-            best_acc = score
-            torch.save(state, os.path.join(args.out, "best.pt"))
+            best_acc, best_epoch = score, epoch
+            torch.save(state, os.path.join(run_dir, "best.pt"))
 
-    with open(os.path.join(args.out, "history.json"), "w") as f:
-        json.dump(history, f, indent=1)
+    summary = {"run_name": args.run_name, "params": n_params, "epochs": args.epochs, "best_epoch": best_epoch,
+               "best_val_acc": best_acc if val is not None else None,
+               "final_train_acc": history[-1]["train_acc"], "total_time_min": sum(r["time"] for r in history) / 60}
+    with open(os.path.join(run_dir, "summary.json"), "w") as f:
+        json.dump(summary, f, indent=1)
     if val is not None:
-        print(f"Best val acc: {best_acc:.4f}")
-    print(f"Checkpoints saved to {args.out}. Run: python predict.py")
+        log(f"Best val acc: {best_acc:.4f} (epoch {best_epoch})")
+    log(f"Saved to {run_dir}. Next: python predict.py --run-name {args.run_name}")
 
 
 if __name__ == "__main__":

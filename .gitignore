@@ -6,9 +6,10 @@ test.csv
 sample_submission.csv
 *.zip
 
-# outputs
+# outputs: keep runs/<name>/{config,history,summary}.json + train_log.txt, ignore weights & predictions
 cache/
 checkpoints/
+*.pt
 submission.csv
 
 __pycache__/
