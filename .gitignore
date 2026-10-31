@@ -1,0 +1,16 @@
+# data (not redistributed; see README)
+train_images/
+test_images/
+train_labels.csv
+test.csv
+sample_submission.csv
+*.zip
+
+# outputs
+cache/
+checkpoints/
+submission.csv
+
+__pycache__/
+.DS_Store
+.ipynb_checkpoints/
