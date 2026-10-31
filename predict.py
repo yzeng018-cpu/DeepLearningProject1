@@ -14,7 +14,7 @@ import os
 import torch
 
 from data import ROOT, load_test, to_tensor
-from model import ResNet, count_params
+from model import build_model, count_params
 from train import get_device
 
 
@@ -40,8 +40,8 @@ def main():
     out_path = os.path.join(run_dir, "submission.csv")
 
     device = get_device()
-    ckpt = torch.load(ckpt_path, map_location=device)
-    model = ResNet(dropout=ckpt["args"]["dropout"]).to(device)
+    ckpt = torch.load(ckpt_path, map_location=device, weights_only=False)  # our own checkpoint
+    model = build_model(ckpt["args"]).to(device)
     model.load_state_dict(ckpt["model"])
     model.eval()
     print(f"Loaded {ckpt_path} (epoch {ckpt['epoch']}, {count_params(model):,} params)")

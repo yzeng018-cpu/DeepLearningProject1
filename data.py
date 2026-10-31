@@ -69,21 +69,23 @@ def to_tensor(x, mean, std, device):
     return (t - mean.view(1, 3, 1, 1)) / std.view(1, 3, 1, 1)
 
 
-def augment(x, pad=4, cutout=8):
+def augment(x, pad=4, cutout=8, crop=True, flip=True):
     """Batched GPU augmentation: random crop (reflect pad), horizontal flip, cutout."""
     n, _, h, w = x.shape
     dev = x.device
     # random horizontal flip
-    flip = torch.rand(n, device=dev) < 0.5
-    x = torch.where(flip.view(n, 1, 1, 1), x.flip(3), x)
+    if flip:
+        flip_mask = torch.rand(n, device=dev) < 0.5
+        x = torch.where(flip_mask.view(n, 1, 1, 1), x.flip(3), x)
     # random crop with padding
-    xp = F.pad(x, (pad, pad, pad, pad), mode="reflect")
-    dx = torch.randint(0, 2 * pad + 1, (n,), device=dev)
-    dy = torch.randint(0, 2 * pad + 1, (n,), device=dev)
-    rows = (dy.view(n, 1) + torch.arange(h, device=dev).view(1, h))  # n,h
-    cols = (dx.view(n, 1) + torch.arange(w, device=dev).view(1, w))  # n,w
-    idx_n = torch.arange(n, device=dev).view(n, 1, 1)
-    x = xp.permute(0, 2, 3, 1)[idx_n, rows.view(n, h, 1), cols.view(n, 1, w)].permute(0, 3, 1, 2)
+    if crop:
+        xp = F.pad(x, (pad, pad, pad, pad), mode="reflect")
+        dx = torch.randint(0, 2 * pad + 1, (n,), device=dev)
+        dy = torch.randint(0, 2 * pad + 1, (n,), device=dev)
+        rows = (dy.view(n, 1) + torch.arange(h, device=dev).view(1, h))  # n,h
+        cols = (dx.view(n, 1) + torch.arange(w, device=dev).view(1, w))  # n,w
+        idx_n = torch.arange(n, device=dev).view(n, 1, 1)
+        x = xp.permute(0, 2, 3, 1)[idx_n, rows.view(n, h, 1), cols.view(n, 1, w)].permute(0, 3, 1, 2)
     # cutout (DeVries & Taylor, 2017)
     if cutout > 0:
         cy = torch.randint(0, h, (n, 1, 1), device=dev)
@@ -93,3 +95,42 @@ def augment(x, pad=4, cutout=8):
         hole = ((yy - cy).abs() <= cutout // 2) & ((xx - cx).abs() <= cutout // 2)
         x = x * (~hole).unsqueeze(1)
     return x.contiguous()
+
+
+def make_policy(name):
+    """Learned/random augmentation policy applied per image on uint8 tensors (CPU)."""
+    from torchvision.transforms import v2
+    if name == "autoaugment":
+        return v2.AutoAugment(v2.AutoAugmentPolicy.CIFAR10)  # Cubuk et al., 2019
+    if name == "randaugment":
+        return v2.RandAugment()  # Cubuk et al., 2020
+    if name == "trivialaugment":
+        return v2.TrivialAugmentWide()  # Muller & Hutter, 2021
+    return None
+
+
+def apply_policy(policy, x):
+    """uint8 NHWC numpy batch -> uint8 NHWC numpy batch, policy applied to each image."""
+    imgs = torch.from_numpy(x).permute(0, 3, 1, 2)
+    return torch.stack([policy(img) for img in imgs]).permute(0, 2, 3, 1).numpy()
+
+
+def mix_batch(x, y, mixup=0.0, cutmix=0.0):
+    """Mixup (Zhang et al., 2018) / CutMix (Yun et al., 2019); picks one at random if both are on.
+    Returns mixed x, both label sets and the weight lam of the first set."""
+    use_cutmix = cutmix > 0 and (mixup <= 0 or np.random.rand() < 0.5)
+    alpha = cutmix if use_cutmix else mixup
+    lam = float(np.random.beta(alpha, alpha))
+    perm = torch.randperm(x.size(0), device=x.device)
+    if use_cutmix:
+        _, _, h, w = x.shape
+        ch, cw = int(h * np.sqrt(1 - lam)), int(w * np.sqrt(1 - lam))
+        cy, cx = np.random.randint(h), np.random.randint(w)
+        y0, y1 = max(cy - ch // 2, 0), min(cy + ch // 2, h)
+        x0, x1 = max(cx - cw // 2, 0), min(cx + cw // 2, w)
+        x = x.clone()
+        x[:, :, y0:y1, x0:x1] = x[perm, :, y0:y1, x0:x1]
+        lam = 1 - (y1 - y0) * (x1 - x0) / (h * w)
+    else:
+        x = lam * x + (1 - lam) * x[perm]
+    return x, y, y[perm], lam
