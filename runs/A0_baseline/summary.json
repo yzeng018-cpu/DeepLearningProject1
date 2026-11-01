@@ -1,0 +1,10 @@
+{
+ "run_name": "A0_baseline",
+ "params": 4949514,
+ "epochs": 30,
+ "best_epoch": 29,
+ "best_val_acc": 0.9438,
+ "final_val_acc": 0.9432,
+ "final_train_acc": 0.9753383190883191,
+ "total_time_min": 7.819297424952189
+}
