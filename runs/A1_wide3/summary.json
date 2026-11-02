@@ -1,0 +1,10 @@
+{
+ "run_name": "A1_wide3",
+ "params": 4337370,
+ "epochs": 30,
+ "best_epoch": 29,
+ "best_val_acc": 0.9492,
+ "final_val_acc": 0.9492,
+ "final_train_acc": 0.9852207977207977,
+ "total_time_min": 11.405145176251729
+}

@@ -1,0 +1,41 @@
+run: A3_no_skip  (/content/drive/MyDrive/kaggle_DL_output/runs/A3_no_skip)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.1, "momentum": 0.9, "weight_decay": 0.0005, "label_smoothing": 0.1, "cutout": 8, "val_frac": 0.1, "seed": 42, "run_name": "A3_no_skip", "runs_dir": "/content/drive/MyDrive/kaggle_DL_output/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 240], "blocks": [2, 2, 2, 2], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": true, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "sgd", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": true, "ckpt_every": 1, "allow_over_budget": false}
+device=cuda  train=45000  val=5000
+Trainable parameters: 4,845,866
+epoch=1  lr=0.0152  train_loss=1.7020  train_acc=0.4329  time=15.5562  val_acc=0.4364  val_loss=1.6111
+epoch=2  lr=0.0437  train_loss=1.3772  train_acc=0.6015  time=14.3563  val_acc=0.6172  val_loss=1.1026
+epoch=3  lr=0.0761  train_loss=1.2137  train_acc=0.6837  time=14.3963  val_acc=0.6978  val_loss=0.9289
+epoch=4  lr=0.0971  train_loss=1.1144  train_acc=0.7307  time=14.2466  val_acc=0.7556  val_loss=0.7604
+epoch=5  lr=0.0999  train_loss=1.0487  train_acc=0.7606  time=14.1124  val_acc=0.7996  val_loss=0.6453
+epoch=6  lr=0.0991  train_loss=1.0014  train_acc=0.7811  time=14.1735  val_acc=0.7482  val_loss=0.7940
+epoch=7  lr=0.0976  train_loss=0.9683  train_acc=0.7953  time=14.2025  val_acc=0.7846  val_loss=0.6695
+epoch=8  lr=0.0954  train_loss=0.9387  train_acc=0.8090  time=14.2004  val_acc=0.7920  val_loss=0.6608
+epoch=9  lr=0.0925  train_loss=0.9173  train_acc=0.8186  time=14.1746  val_acc=0.7970  val_loss=0.6396
+epoch=10  lr=0.0889  train_loss=0.8968  train_acc=0.8274  time=14.1780  val_acc=0.8238  val_loss=0.5545
+epoch=11  lr=0.0848  train_loss=0.8826  train_acc=0.8338  time=14.1411  val_acc=0.7568  val_loss=0.7600
+epoch=12  lr=0.0801  train_loss=0.8680  train_acc=0.8384  time=14.1875  val_acc=0.8208  val_loss=0.5749
+epoch=13  lr=0.0750  train_loss=0.8474  train_acc=0.8493  time=14.4002  val_acc=0.7960  val_loss=0.6509
+epoch=14  lr=0.0695  train_loss=0.8422  train_acc=0.8521  time=14.1688  val_acc=0.8560  val_loss=0.4771
+epoch=15  lr=0.0637  train_loss=0.8263  train_acc=0.8584  time=14.1858  val_acc=0.8042  val_loss=0.6402
+epoch=16  lr=0.0577  train_loss=0.8148  train_acc=0.8638  time=14.1822  val_acc=0.8624  val_loss=0.4733
+epoch=17  lr=0.0515  train_loss=0.8008  train_acc=0.8679  time=14.4289  val_acc=0.8644  val_loss=0.4522
+epoch=18  lr=0.0454  train_loss=0.7842  train_acc=0.8785  time=14.3556  val_acc=0.8624  val_loss=0.4598
+epoch=19  lr=0.0393  train_loss=0.7747  train_acc=0.8804  time=14.3082  val_acc=0.8750  val_loss=0.4398
+epoch=20  lr=0.0334  train_loss=0.7549  train_acc=0.8911  time=14.1894  val_acc=0.8370  val_loss=0.5672
+epoch=21  lr=0.0277  train_loss=0.7406  train_acc=0.8969  time=14.1637  val_acc=0.8810  val_loss=0.4230
+epoch=22  lr=0.0224  train_loss=0.7266  train_acc=0.9020  time=14.4098  val_acc=0.8988  val_loss=0.3773
+epoch=23  lr=0.0175  train_loss=0.7035  train_acc=0.9112  time=14.3223  val_acc=0.8844  val_loss=0.4068
+epoch=24  lr=0.0130  train_loss=0.6833  train_acc=0.9232  time=14.2465  val_acc=0.9146  val_loss=0.3208
+epoch=25  lr=0.0092  train_loss=0.6575  train_acc=0.9336  time=14.1734  val_acc=0.9042  val_loss=0.3514
+epoch=26  lr=0.0059  train_loss=0.6357  train_acc=0.9422  time=14.1693  val_acc=0.9308  val_loss=0.2872
+epoch=27  lr=0.0034  train_loss=0.6137  train_acc=0.9528  time=14.2241  val_acc=0.9314  val_loss=0.2841
+epoch=28  lr=0.0015  train_loss=0.5963  train_acc=0.9604  time=14.1547  val_acc=0.9354  val_loss=0.2712
+epoch=29  lr=0.0004  train_loss=0.5844  train_acc=0.9652  time=14.1625  val_acc=0.9374  val_loss=0.2629
+epoch=30  lr=0.0000  train_loss=0.5782  train_acc=0.9691  time=14.1933  val_acc=0.9376  val_loss=0.2640
+Best val acc: 0.9376 (epoch 30)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/A3_no_skip. Next: python predict.py --run-name A3_no_skip
+resuming A3_no_skip from epoch 30
+device=cuda  train=45000  val=5000
+Trainable parameters: 4,845,866
+Best val acc: 0.9376 (epoch 30)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/A3_no_skip. Next: python predict.py --run-name A3_no_skip

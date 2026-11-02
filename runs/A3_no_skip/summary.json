@@ -1,0 +1,10 @@
+{
+ "run_name": "A3_no_skip",
+ "params": 4845866,
+ "epochs": 30,
+ "best_epoch": 30,
+ "best_val_acc": 0.9376,
+ "final_val_acc": 0.9376,
+ "final_train_acc": 0.9691283831908832,
+ "total_time_min": 7.139405512809754
+}

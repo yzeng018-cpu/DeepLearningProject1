@@ -1,0 +1,10 @@
+{
+ "run_name": "A2_x025",
+ "params": 311418,
+ "epochs": 30,
+ "best_epoch": 30,
+ "best_val_acc": 0.9068,
+ "final_val_acc": 0.9068,
+ "final_train_acc": 0.9148860398860399,
+ "total_time_min": 2.9771288951237995
+}

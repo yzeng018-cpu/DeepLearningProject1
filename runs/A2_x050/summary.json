@@ -1,0 +1,10 @@
+{
+ "run_name": "A2_x050",
+ "params": 1240138,
+ "epochs": 30,
+ "best_epoch": 28,
+ "best_val_acc": 0.9316,
+ "final_val_acc": 0.931,
+ "final_train_acc": 0.9557514245014245,
+ "total_time_min": 3.6985109210014344
+}

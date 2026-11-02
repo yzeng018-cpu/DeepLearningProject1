@@ -1,0 +1,41 @@
+run: C2_adamw  (/content/drive/MyDrive/kaggle_DL_output/runs/C2_adamw)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.002, "momentum": 0.9, "weight_decay": 0.05, "label_smoothing": 0.1, "cutout": 8, "val_frac": 0.1, "seed": 42, "run_name": "C2_adamw", "runs_dir": "/content/drive/MyDrive/kaggle_DL_output/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 240], "blocks": [2, 2, 2, 2], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "adamw", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": true, "ckpt_every": 1, "allow_over_budget": false}
+device=cuda  train=45000  val=5000
+Trainable parameters: 4,949,514
+epoch=1  lr=0.0003  train_loss=1.6743  train_acc=0.4485  time=17.0105  val_acc=0.4774  val_loss=1.5161
+run: C2_adamw  (/content/drive/MyDrive/kaggle_DL_output/runs/C2_adamw)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.002, "momentum": 0.9, "weight_decay": 0.05, "label_smoothing": 0.1, "cutout": 8, "val_frac": 0.1, "seed": 42, "run_name": "C2_adamw", "runs_dir": "/content/drive/MyDrive/kaggle_DL_output/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 240], "blocks": [2, 2, 2, 2], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "adamw", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": true, "ckpt_every": 1, "allow_over_budget": false}
+device=cuda  train=45000  val=5000
+Trainable parameters: 4,949,514
+epoch=1  lr=0.0003  train_loss=1.6743  train_acc=0.4485  time=16.3881  val_acc=0.4774  val_loss=1.5161
+epoch=2  lr=0.0009  train_loss=1.3779  train_acc=0.6006  time=14.5666  val_acc=0.6788  val_loss=0.9452
+epoch=3  lr=0.0015  train_loss=1.2155  train_acc=0.6828  time=15.0525  val_acc=0.6566  val_loss=0.9889
+epoch=4  lr=0.0019  train_loss=1.1141  train_acc=0.7313  time=15.3151  val_acc=0.7798  val_loss=0.7005
+epoch=5  lr=0.0020  train_loss=1.0360  train_acc=0.7656  time=15.7163  val_acc=0.7972  val_loss=0.6354
+epoch=6  lr=0.0020  train_loss=0.9765  train_acc=0.7916  time=16.2463  val_acc=0.7898  val_loss=0.6578
+epoch=7  lr=0.0020  train_loss=0.9311  train_acc=0.8131  time=16.4288  val_acc=0.8272  val_loss=0.5651
+epoch=8  lr=0.0019  train_loss=0.8919  train_acc=0.8306  time=16.0126  val_acc=0.8508  val_loss=0.4859
+epoch=9  lr=0.0019  train_loss=0.8652  train_acc=0.8408  time=15.9155  val_acc=0.8088  val_loss=0.6124
+epoch=10  lr=0.0018  train_loss=0.8430  train_acc=0.8540  time=15.9445  val_acc=0.8526  val_loss=0.4893
+epoch=11  lr=0.0017  train_loss=0.8183  train_acc=0.8621  time=15.9173  val_acc=0.8446  val_loss=0.4980
+epoch=12  lr=0.0016  train_loss=0.8005  train_acc=0.8695  time=15.9357  val_acc=0.8782  val_loss=0.4168
+epoch=13  lr=0.0015  train_loss=0.7771  train_acc=0.8797  time=16.0895  val_acc=0.8596  val_loss=0.4777
+epoch=14  lr=0.0014  train_loss=0.7598  train_acc=0.8888  time=15.9156  val_acc=0.8744  val_loss=0.4251
+epoch=15  lr=0.0013  train_loss=0.7396  train_acc=0.8983  time=15.8651  val_acc=0.8822  val_loss=0.4152
+epoch=16  lr=0.0012  train_loss=0.7229  train_acc=0.9039  time=15.9681  val_acc=0.9046  val_loss=0.3431
+epoch=17  lr=0.0010  train_loss=0.7024  train_acc=0.9118  time=15.8298  val_acc=0.9004  val_loss=0.3667
+epoch=18  lr=0.0009  train_loss=0.6852  train_acc=0.9211  time=15.8028  val_acc=0.9138  val_loss=0.3282
+epoch=19  lr=0.0008  train_loss=0.6685  train_acc=0.9274  time=15.8865  val_acc=0.9088  val_loss=0.3371
+epoch=20  lr=0.0007  train_loss=0.6488  train_acc=0.9362  time=15.8247  val_acc=0.9280  val_loss=0.2870
+epoch=21  lr=0.0006  train_loss=0.6314  train_acc=0.9451  time=15.8717  val_acc=0.9288  val_loss=0.2903
+epoch=22  lr=0.0004  train_loss=0.6157  train_acc=0.9514  time=15.9906  val_acc=0.9316  val_loss=0.2828
+epoch=23  lr=0.0003  train_loss=0.5993  train_acc=0.9581  time=15.9124  val_acc=0.9366  val_loss=0.2713
+epoch=24  lr=0.0003  train_loss=0.5881  train_acc=0.9643  time=16.1516  val_acc=0.9374  val_loss=0.2629
+epoch=25  lr=0.0002  train_loss=0.5771  train_acc=0.9687  time=16.1942  val_acc=0.9368  val_loss=0.2631
+epoch=26  lr=0.0001  train_loss=0.5680  train_acc=0.9724  time=15.8486  val_acc=0.9392  val_loss=0.2665
+epoch=27  lr=0.0001  train_loss=0.5607  train_acc=0.9759  time=15.9093  val_acc=0.9430  val_loss=0.2570
+epoch=28  lr=0.0000  train_loss=0.5552  train_acc=0.9785  time=16.0835  val_acc=0.9418  val_loss=0.2558
+epoch=29  lr=0.0000  train_loss=0.5533  train_acc=0.9791  time=15.8418  val_acc=0.9420  val_loss=0.2559
+epoch=30  lr=0.0000  train_loss=0.5516  train_acc=0.9804  time=15.8036  val_acc=0.9410  val_loss=0.2584
+Best val acc: 0.9430 (epoch 27)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/C2_adamw. Next: python predict.py --run-name C2_adamw

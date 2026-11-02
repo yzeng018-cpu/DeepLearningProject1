@@ -1,0 +1,41 @@
+run: A2_x050  (/content/drive/MyDrive/kaggle_DL_output/runs/A2_x050)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.1, "momentum": 0.9, "weight_decay": 0.0005, "label_smoothing": 0.1, "cutout": 8, "val_frac": 0.1, "seed": 42, "run_name": "A2_x050", "runs_dir": "/content/drive/MyDrive/kaggle_DL_output/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 240], "blocks": [2, 2, 2, 2], "width_mult": 0.5, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "sgd", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": true, "ckpt_every": 1, "allow_over_budget": false}
+device=cuda  train=45000  val=5000
+Trainable parameters: 1,240,138
+epoch=1  lr=0.0152  train_loss=1.6738  train_acc=0.4534  time=8.1117  val_acc=0.4738  val_loss=1.5713
+epoch=2  lr=0.0437  train_loss=1.3484  train_acc=0.6200  time=7.5308  val_acc=0.5414  val_loss=1.3644
+epoch=3  lr=0.0761  train_loss=1.1918  train_acc=0.6958  time=7.2795  val_acc=0.7150  val_loss=0.8411
+epoch=4  lr=0.0971  train_loss=1.1070  train_acc=0.7323  time=7.5475  val_acc=0.7600  val_loss=0.7437
+epoch=5  lr=0.0999  train_loss=1.0479  train_acc=0.7593  time=7.6412  val_acc=0.7802  val_loss=0.6842
+epoch=6  lr=0.0991  train_loss=1.0048  train_acc=0.7799  time=7.1341  val_acc=0.8014  val_loss=0.6280
+epoch=7  lr=0.0976  train_loss=0.9713  train_acc=0.7953  time=7.4295  val_acc=0.7946  val_loss=0.6453
+epoch=8  lr=0.0954  train_loss=0.9435  train_acc=0.8063  time=7.4068  val_acc=0.8014  val_loss=0.6444
+epoch=9  lr=0.0925  train_loss=0.9234  train_acc=0.8160  time=7.1105  val_acc=0.8258  val_loss=0.5617
+epoch=10  lr=0.0889  train_loss=0.9057  train_acc=0.8246  time=7.5364  val_acc=0.8468  val_loss=0.5034
+epoch=11  lr=0.0848  train_loss=0.8921  train_acc=0.8279  time=7.2084  val_acc=0.7742  val_loss=0.6799
+epoch=12  lr=0.0801  train_loss=0.8806  train_acc=0.8330  time=7.5219  val_acc=0.8148  val_loss=0.5885
+epoch=13  lr=0.0750  train_loss=0.8592  train_acc=0.8442  time=7.6134  val_acc=0.8366  val_loss=0.5465
+epoch=14  lr=0.0695  train_loss=0.8547  train_acc=0.8472  time=7.0882  val_acc=0.8538  val_loss=0.4974
+epoch=15  lr=0.0637  train_loss=0.8388  train_acc=0.8514  time=7.5521  val_acc=0.8516  val_loss=0.5008
+epoch=16  lr=0.0577  train_loss=0.8277  train_acc=0.8574  time=7.3089  val_acc=0.8696  val_loss=0.4475
+epoch=17  lr=0.0515  train_loss=0.8180  train_acc=0.8633  time=7.1902  val_acc=0.8544  val_loss=0.4931
+epoch=18  lr=0.0454  train_loss=0.8021  train_acc=0.8690  time=7.5044  val_acc=0.8682  val_loss=0.4585
+epoch=19  lr=0.0393  train_loss=0.7932  train_acc=0.8730  time=7.1583  val_acc=0.8568  val_loss=0.4717
+epoch=20  lr=0.0334  train_loss=0.7751  train_acc=0.8803  time=7.4002  val_acc=0.8684  val_loss=0.4445
+epoch=21  lr=0.0277  train_loss=0.7635  train_acc=0.8868  time=7.4834  val_acc=0.8844  val_loss=0.4154
+epoch=22  lr=0.0224  train_loss=0.7461  train_acc=0.8941  time=7.1401  val_acc=0.8802  val_loss=0.4140
+epoch=23  lr=0.0175  train_loss=0.7283  train_acc=0.9010  time=7.5830  val_acc=0.8992  val_loss=0.3671
+epoch=24  lr=0.0130  train_loss=0.7073  train_acc=0.9111  time=7.2343  val_acc=0.9054  val_loss=0.3470
+epoch=25  lr=0.0092  train_loss=0.6905  train_acc=0.9187  time=7.3102  val_acc=0.9110  val_loss=0.3288
+epoch=26  lr=0.0059  train_loss=0.6672  train_acc=0.9287  time=7.6172  val_acc=0.9214  val_loss=0.3102
+epoch=27  lr=0.0034  train_loss=0.6453  train_acc=0.9383  time=7.1779  val_acc=0.9244  val_loss=0.2934
+epoch=28  lr=0.0015  train_loss=0.6298  train_acc=0.9458  time=7.5466  val_acc=0.9316  val_loss=0.2841
+epoch=29  lr=0.0004  train_loss=0.6163  train_acc=0.9522  time=7.3842  val_acc=0.9302  val_loss=0.2822
+epoch=30  lr=0.0000  train_loss=0.6097  train_acc=0.9558  time=7.1600  val_acc=0.9310  val_loss=0.2828
+Best val acc: 0.9316 (epoch 28)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/A2_x050. Next: python predict.py --run-name A2_x050
+resuming A2_x050 from epoch 30
+device=cuda  train=45000  val=5000
+Trainable parameters: 1,240,138
+Best val acc: 0.9316 (epoch 28)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/A2_x050. Next: python predict.py --run-name A2_x050

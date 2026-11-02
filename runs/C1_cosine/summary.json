@@ -1,0 +1,10 @@
+{
+ "run_name": "C1_cosine",
+ "params": 4949514,
+ "epochs": 30,
+ "best_epoch": 30,
+ "best_val_acc": 0.9444,
+ "final_val_acc": 0.9444,
+ "final_train_acc": 0.9762063746438746,
+ "total_time_min": 7.825341888268789
+}

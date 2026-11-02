@@ -1,0 +1,10 @@
+{
+ "run_name": "A1_deep3",
+ "params": 4327754,
+ "epochs": 30,
+ "best_epoch": 30,
+ "best_val_acc": 0.9446,
+ "final_val_acc": 0.9446,
+ "final_train_acc": 0.9801237535612536,
+ "total_time_min": 10.171502097447712
+}

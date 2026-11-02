@@ -34,3 +34,13 @@ epoch=29  lr=0.0004  train_loss=0.5715  train_acc=0.9720  time=15.5503  val_acc=
 epoch=30  lr=0.0000  train_loss=0.5655  train_acc=0.9753  time=15.6929  val_acc=0.9432  val_loss=0.2508
 Best val acc: 0.9438 (epoch 29)
 Saved to /content/drive/MyDrive/kaggle_DL_output/runs/A0_baseline. Next: python predict.py --run-name A0_baseline
+resuming A0_baseline from epoch 30
+device=cuda  train=45000  val=5000
+Trainable parameters: 4,949,514
+Best val acc: 0.9438 (epoch 29)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/A0_baseline. Next: python predict.py --run-name A0_baseline
+resuming A0_baseline from epoch 30
+device=cuda  train=45000  val=5000
+Trainable parameters: 4,949,514
+Best val acc: 0.9438 (epoch 29)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/A0_baseline. Next: python predict.py --run-name A0_baseline
