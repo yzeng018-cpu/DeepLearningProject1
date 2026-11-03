@@ -1,0 +1,10 @@
+{
+ "run_name": "A1_shallow4",
+ "params": 4903242,
+ "epochs": 30,
+ "best_epoch": 29,
+ "best_val_acc": 0.9402,
+ "final_val_acc": 0.9402,
+ "final_train_acc": 0.9693732193732194,
+ "total_time_min": 15.116497874259949
+}

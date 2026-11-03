@@ -1,0 +1,39 @@
+run: A1_last1  (/Users/dingdang/Documents/1_Study/NYU/Courses/ECE-GY 7123 Deep Learning/kaggle_DL Project/runs/A1_last1)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.1, "momentum": 0.9, "weight_decay": 0.0005, "label_smoothing": 0.1, "cutout": 8, "val_frac": 0.1, "seed": 42, "run_name": "A1_last1", "runs_dir": "/Users/dingdang/Documents/1_Study/NYU/Courses/ECE-GY 7123 Deep Learning/kaggle_DL Project/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 320], "blocks": [2, 2, 2, 1], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "sgd", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": true, "ckpt_every": 1, "allow_over_budget": false}
+device=mps  train=45000  val=5000
+Trainable parameters: 4,521,034
+epoch=1  lr=0.0152  train_loss=1.6245  train_acc=0.4785  time=43.0221  val_acc=0.6184  val_loss=1.1143
+epoch=2  lr=0.0437  train_loss=1.3055  train_acc=0.6441  time=42.4832  val_acc=0.6068  val_loss=1.1049
+epoch=3  lr=0.0761  train_loss=1.1603  train_acc=0.7120  time=42.2994  val_acc=0.7426  val_loss=0.7970
+epoch=4  lr=0.0971  train_loss=1.0679  train_acc=0.7550  time=42.4749  val_acc=0.7424  val_loss=0.7754
+epoch=5  lr=0.0999  train_loss=0.9999  train_acc=0.7850  time=42.2580  val_acc=0.7780  val_loss=0.7025
+epoch=6  lr=0.0991  train_loss=0.9556  train_acc=0.8054  time=42.4501  val_acc=0.8012  val_loss=0.6427
+epoch=7  lr=0.0976  train_loss=0.9207  train_acc=0.8225  time=42.6537  val_acc=0.7608  val_loss=0.7293
+epoch=8  lr=0.0954  train_loss=0.8937  train_acc=0.8330  time=42.8390  val_acc=0.8378  val_loss=0.5287
+epoch=9  lr=0.0925  train_loss=0.8725  train_acc=0.8438  time=42.2833  val_acc=0.8338  val_loss=0.5256
+epoch=10  lr=0.0889  train_loss=0.8536  train_acc=0.8514  time=42.2377  val_acc=0.8318  val_loss=0.5435
+epoch=11  lr=0.0848  train_loss=0.8350  train_acc=0.8578  time=42.2691  val_acc=0.8490  val_loss=0.5169
+epoch=12  lr=0.0801  train_loss=0.8239  train_acc=0.8625  time=42.2480  val_acc=0.8582  val_loss=0.4863
+epoch=13  lr=0.0750  train_loss=0.8078  train_acc=0.8695  time=42.4717  val_acc=0.8646  val_loss=0.4561
+epoch=14  lr=0.0695  train_loss=0.7979  train_acc=0.8744  time=42.2348  val_acc=0.8604  val_loss=0.4561
+epoch=15  lr=0.0637  train_loss=0.7833  train_acc=0.8802  time=42.6978  val_acc=0.8754  val_loss=0.4342
+epoch=16  lr=0.0577  train_loss=0.7699  train_acc=0.8854  time=43.1340  val_acc=0.8672  val_loss=0.4465
+epoch=17  lr=0.0515  train_loss=0.7561  train_acc=0.8920  time=43.5379  val_acc=0.8552  val_loss=0.4989
+epoch=18  lr=0.0454  train_loss=0.7465  train_acc=0.8975  time=42.6623  val_acc=0.8470  val_loss=0.5248
+epoch=19  lr=0.0393  train_loss=0.7305  train_acc=0.9034  time=42.7611  val_acc=0.8854  val_loss=0.3906
+epoch=20  lr=0.0334  train_loss=0.7211  train_acc=0.9057  time=43.7851  val_acc=0.8984  val_loss=0.3590
+epoch=21  lr=0.0277  train_loss=0.7090  train_acc=0.9119  time=42.6095  val_acc=0.9046  val_loss=0.3491
+epoch=22  lr=0.0224  train_loss=0.6891  train_acc=0.9204  time=46.4464  val_acc=0.9162  val_loss=0.3303
+epoch=23  lr=0.0175  train_loss=0.6702  train_acc=0.9295  time=42.6045  val_acc=0.9162  val_loss=0.3146
+epoch=24  lr=0.0130  train_loss=0.6519  train_acc=0.9385  time=44.9416  val_acc=0.9192  val_loss=0.3088
+epoch=25  lr=0.0092  train_loss=0.6295  train_acc=0.9484  time=47.8674  val_acc=0.9246  val_loss=0.3087
+epoch=26  lr=0.0059  train_loss=0.6064  train_acc=0.9574  time=43.0978  val_acc=0.9366  val_loss=0.2740
+epoch=27  lr=0.0034  train_loss=0.5888  train_acc=0.9663  time=42.3421  val_acc=0.9396  val_loss=0.2639
+epoch=28  lr=0.0015  train_loss=0.5744  train_acc=0.9728  time=42.2419  val_acc=0.9428  val_loss=0.2495
+epoch=29  lr=0.0004  train_loss=0.5645  train_acc=0.9777  time=42.2403  val_acc=0.9450  val_loss=0.2438
+resuming A1_last1 from epoch 29
+device=mps  train=45000  val=5000
+Trainable parameters: 4,521,034
+epoch=30  lr=0.0000  train_loss=0.5589  train_acc=0.9798  time=42.4590  val_acc=0.9460  val_loss=0.2394
+Best val acc: 0.9460 (epoch 30)
+Saved to /Users/dingdang/Documents/1_Study/NYU/Courses/ECE-GY 7123 Deep Learning/kaggle_DL Project/runs/A1_last1. Next: python predict.py --run-name A1_last1

@@ -1,0 +1,10 @@
+{
+ "run_name": "A5_preact",
+ "params": 4948394,
+ "epochs": 30,
+ "best_epoch": 29,
+ "best_val_acc": 0.9426,
+ "final_val_acc": 0.9418,
+ "final_train_acc": 0.9754496082621082,
+ "total_time_min": 21.555459574858347
+}

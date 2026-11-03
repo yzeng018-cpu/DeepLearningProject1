@@ -1,0 +1,36 @@
+run: A5_preact  (/Users/dingdang/Documents/1_Study/NYU/Courses/ECE-GY 7123 Deep Learning/kaggle_DL Project/runs/A5_preact)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.1, "momentum": 0.9, "weight_decay": 0.0005, "label_smoothing": 0.1, "cutout": 8, "val_frac": 0.1, "seed": 42, "run_name": "A5_preact", "runs_dir": "/Users/dingdang/Documents/1_Study/NYU/Courses/ECE-GY 7123 Deep Learning/kaggle_DL Project/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 240], "blocks": [2, 2, 2, 2], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "preact", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "sgd", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": true, "ckpt_every": 1, "allow_over_budget": false}
+device=mps  train=45000  val=5000
+Trainable parameters: 4,948,394
+epoch=1  lr=0.0152  train_loss=1.6593  train_acc=0.4578  time=43.2998  val_acc=0.6032  val_loss=1.1146
+epoch=2  lr=0.0437  train_loss=1.3012  train_acc=0.6394  time=43.1454  val_acc=0.6004  val_loss=1.1267
+epoch=3  lr=0.0761  train_loss=1.1551  train_acc=0.7105  time=43.0953  val_acc=0.7390  val_loss=0.7966
+epoch=4  lr=0.0971  train_loss=1.0654  train_acc=0.7529  time=43.0921  val_acc=0.7370  val_loss=0.8328
+epoch=5  lr=0.0999  train_loss=0.9971  train_acc=0.7825  time=43.0994  val_acc=0.7662  val_loss=0.7439
+epoch=6  lr=0.0991  train_loss=0.9584  train_acc=0.7992  time=43.1018  val_acc=0.8132  val_loss=0.6088
+epoch=7  lr=0.0976  train_loss=0.9192  train_acc=0.8198  time=43.1068  val_acc=0.7946  val_loss=0.6458
+epoch=8  lr=0.0954  train_loss=0.8958  train_acc=0.8287  time=43.1023  val_acc=0.8404  val_loss=0.5447
+epoch=9  lr=0.0925  train_loss=0.8722  train_acc=0.8394  time=43.0997  val_acc=0.8122  val_loss=0.5971
+epoch=10  lr=0.0889  train_loss=0.8549  train_acc=0.8460  time=43.1169  val_acc=0.8156  val_loss=0.5934
+epoch=11  lr=0.0848  train_loss=0.8345  train_acc=0.8555  time=43.1036  val_acc=0.8422  val_loss=0.5286
+epoch=12  lr=0.0801  train_loss=0.8247  train_acc=0.8586  time=43.1028  val_acc=0.8602  val_loss=0.4881
+epoch=13  lr=0.0750  train_loss=0.8110  train_acc=0.8656  time=43.1078  val_acc=0.8366  val_loss=0.5295
+epoch=14  lr=0.0695  train_loss=0.8018  train_acc=0.8681  time=43.1047  val_acc=0.8662  val_loss=0.4672
+epoch=15  lr=0.0637  train_loss=0.7883  train_acc=0.8756  time=43.0967  val_acc=0.8450  val_loss=0.5132
+epoch=16  lr=0.0577  train_loss=0.7751  train_acc=0.8816  time=43.0980  val_acc=0.8582  val_loss=0.4812
+epoch=17  lr=0.0515  train_loss=0.7622  train_acc=0.8860  time=43.0946  val_acc=0.8562  val_loss=0.4926
+epoch=18  lr=0.0454  train_loss=0.7512  train_acc=0.8924  time=43.1038  val_acc=0.8614  val_loss=0.4715
+epoch=19  lr=0.0393  train_loss=0.7341  train_acc=0.9006  time=43.1055  val_acc=0.8884  val_loss=0.3931
+epoch=20  lr=0.0334  train_loss=0.7275  train_acc=0.9024  time=43.1029  val_acc=0.9026  val_loss=0.3464
+epoch=21  lr=0.0277  train_loss=0.7149  train_acc=0.9075  time=43.0982  val_acc=0.9042  val_loss=0.3564
+epoch=22  lr=0.0224  train_loss=0.6938  train_acc=0.9179  time=43.1028  val_acc=0.9044  val_loss=0.3379
+epoch=23  lr=0.0175  train_loss=0.6801  train_acc=0.9227  time=43.0988  val_acc=0.9198  val_loss=0.3185
+epoch=24  lr=0.0130  train_loss=0.6587  train_acc=0.9321  time=43.1150  val_acc=0.9166  val_loss=0.3131
+epoch=25  lr=0.0092  train_loss=0.6387  train_acc=0.9408  time=43.1024  val_acc=0.9234  val_loss=0.3007
+epoch=26  lr=0.0059  train_loss=0.6141  train_acc=0.9528  time=43.1070  val_acc=0.9298  val_loss=0.2844
+epoch=27  lr=0.0034  train_loss=0.5963  train_acc=0.9605  time=43.1174  val_acc=0.9330  val_loss=0.2702
+epoch=28  lr=0.0015  train_loss=0.5813  train_acc=0.9676  time=43.1010  val_acc=0.9412  val_loss=0.2560
+epoch=29  lr=0.0004  train_loss=0.5696  train_acc=0.9726  time=43.0998  val_acc=0.9426  val_loss=0.2533
+epoch=30  lr=0.0000  train_loss=0.5645  train_acc=0.9754  time=43.1054  val_acc=0.9418  val_loss=0.2509
+Best val acc: 0.9426 (epoch 29)
+Saved to /Users/dingdang/Documents/1_Study/NYU/Courses/ECE-GY 7123 Deep Learning/kaggle_DL Project/runs/A5_preact. Next: python predict.py --run-name A5_preact

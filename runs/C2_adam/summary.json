@@ -1,0 +1,10 @@
+{
+ "run_name": "C2_adam",
+ "params": 4949514,
+ "epochs": 30,
+ "best_epoch": 29,
+ "best_val_acc": 0.9406,
+ "final_val_acc": 0.9396,
+ "final_train_acc": 0.9685941951566952,
+ "total_time_min": 21.906847043832144
+}

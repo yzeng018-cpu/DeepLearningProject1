@@ -1,0 +1,10 @@
+{
+ "run_name": "C1_step",
+ "params": 4949514,
+ "epochs": 30,
+ "best_epoch": 30,
+ "best_val_acc": 0.9346,
+ "final_val_acc": 0.9346,
+ "final_train_acc": 0.9547720797720798,
+ "total_time_min": 21.51469963391622
+}

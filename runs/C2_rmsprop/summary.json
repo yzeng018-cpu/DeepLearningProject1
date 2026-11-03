@@ -1,0 +1,10 @@
+{
+ "run_name": "C2_rmsprop",
+ "params": 4949514,
+ "epochs": 30,
+ "best_epoch": 30,
+ "best_val_acc": 0.8694,
+ "final_val_acc": 0.8694,
+ "final_train_acc": 0.8494702635327636,
+ "total_time_min": 21.99296873410543
+}

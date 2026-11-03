@@ -1,0 +1,10 @@
+{
+ "run_name": "A4_k5",
+ "params": 4920192,
+ "epochs": 30,
+ "best_epoch": 29,
+ "best_val_acc": 0.9362,
+ "final_val_acc": 0.9354,
+ "final_train_acc": 0.9679042022792023,
+ "total_time_min": 57.442856295903525
+}

@@ -1,0 +1,36 @@
+run: C2_rmsprop  (/Users/dingdang/Documents/1_Study/NYU/Courses/ECE-GY 7123 Deep Learning/kaggle_DL Project/runs/C2_rmsprop)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.001, "momentum": 0.9, "weight_decay": 0.0005, "label_smoothing": 0.1, "cutout": 8, "val_frac": 0.1, "seed": 42, "run_name": "C2_rmsprop", "runs_dir": "/Users/dingdang/Documents/1_Study/NYU/Courses/ECE-GY 7123 Deep Learning/kaggle_DL Project/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 240], "blocks": [2, 2, 2, 2], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "rmsprop", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": true, "ckpt_every": 1, "allow_over_budget": false}
+device=mps  train=45000  val=5000
+Trainable parameters: 4,949,514
+epoch=1  lr=0.0002  train_loss=1.7069  train_acc=0.4352  time=43.8670  val_acc=0.4486  val_loss=1.4913
+epoch=2  lr=0.0004  train_loss=1.5144  train_acc=0.5382  time=43.7158  val_acc=0.4042  val_loss=1.7213
+epoch=3  lr=0.0008  train_loss=1.4791  train_acc=0.5576  time=43.7132  val_acc=0.4534  val_loss=1.6353
+epoch=4  lr=0.0010  train_loss=1.4081  train_acc=0.5921  time=43.7164  val_acc=0.4466  val_loss=1.5443
+epoch=5  lr=0.0010  train_loss=1.3315  train_acc=0.6313  time=43.7253  val_acc=0.5754  val_loss=1.2043
+epoch=6  lr=0.0010  train_loss=1.2748  train_acc=0.6529  time=43.7178  val_acc=0.6270  val_loss=1.1117
+epoch=7  lr=0.0010  train_loss=1.2330  train_acc=0.6748  time=43.7298  val_acc=0.6290  val_loss=1.0885
+epoch=8  lr=0.0010  train_loss=1.2038  train_acc=0.6887  time=43.7151  val_acc=0.6348  val_loss=1.0790
+epoch=9  lr=0.0009  train_loss=1.1753  train_acc=0.7006  time=43.7295  val_acc=0.7262  val_loss=0.8338
+epoch=10  lr=0.0009  train_loss=1.1582  train_acc=0.7085  time=43.9977  val_acc=0.6286  val_loss=1.1067
+epoch=11  lr=0.0008  train_loss=1.1365  train_acc=0.7201  time=44.0951  val_acc=0.7180  val_loss=0.8655
+epoch=12  lr=0.0008  train_loss=1.1318  train_acc=0.7233  time=44.0170  val_acc=0.7398  val_loss=0.7895
+epoch=13  lr=0.0007  train_loss=1.1132  train_acc=0.7283  time=44.0990  val_acc=0.6794  val_loss=0.9271
+epoch=14  lr=0.0007  train_loss=1.1044  train_acc=0.7340  time=44.0973  val_acc=0.7346  val_loss=0.8053
+epoch=15  lr=0.0006  train_loss=1.0922  train_acc=0.7383  time=44.0933  val_acc=0.6756  val_loss=0.9500
+epoch=16  lr=0.0006  train_loss=1.0868  train_acc=0.7414  time=44.1053  val_acc=0.6416  val_loss=1.0939
+epoch=17  lr=0.0005  train_loss=1.0774  train_acc=0.7451  time=44.1048  val_acc=0.6664  val_loss=1.0092
+epoch=18  lr=0.0005  train_loss=1.0620  train_acc=0.7554  time=44.0877  val_acc=0.7248  val_loss=0.8169
+epoch=19  lr=0.0004  train_loss=1.0498  train_acc=0.7587  time=44.1080  val_acc=0.7848  val_loss=0.6865
+epoch=20  lr=0.0003  train_loss=1.0374  train_acc=0.7650  time=44.1138  val_acc=0.7820  val_loss=0.6871
+epoch=21  lr=0.0003  train_loss=1.0220  train_acc=0.7697  time=44.1029  val_acc=0.7982  val_loss=0.6417
+epoch=22  lr=0.0002  train_loss=1.0046  train_acc=0.7800  time=44.0981  val_acc=0.7652  val_loss=0.7113
+epoch=23  lr=0.0002  train_loss=0.9828  train_acc=0.7890  time=44.1043  val_acc=0.8076  val_loss=0.6189
+epoch=24  lr=0.0001  train_loss=0.9670  train_acc=0.7964  time=44.0990  val_acc=0.8102  val_loss=0.5975
+epoch=25  lr=0.0001  train_loss=0.9419  train_acc=0.8075  time=44.1101  val_acc=0.8368  val_loss=0.5437
+epoch=26  lr=0.0001  train_loss=0.9123  train_acc=0.8210  time=44.0923  val_acc=0.8472  val_loss=0.5037
+epoch=27  lr=0.0000  train_loss=0.8945  train_acc=0.8293  time=44.0952  val_acc=0.8576  val_loss=0.4768
+epoch=28  lr=0.0000  train_loss=0.8738  train_acc=0.8398  time=44.1118  val_acc=0.8630  val_loss=0.4581
+epoch=29  lr=0.0000  train_loss=0.8583  train_acc=0.8454  time=44.1017  val_acc=0.8672  val_loss=0.4514
+epoch=30  lr=0.0000  train_loss=0.8493  train_acc=0.8495  time=44.1140  val_acc=0.8694  val_loss=0.4499
+Best val acc: 0.8694 (epoch 30)
+Saved to /Users/dingdang/Documents/1_Study/NYU/Courses/ECE-GY 7123 Deep Learning/kaggle_DL Project/runs/C2_rmsprop. Next: python predict.py --run-name C2_rmsprop

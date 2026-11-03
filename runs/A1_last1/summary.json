@@ -1,0 +1,10 @@
+{
+ "run_name": "A1_last1",
+ "params": 4521034,
+ "epochs": 30,
+ "best_epoch": 30,
+ "best_val_acc": 0.946,
+ "final_val_acc": 0.946,
+ "final_train_acc": 0.979789886039886,
+ "total_time_min": 21.49422692457835
+}

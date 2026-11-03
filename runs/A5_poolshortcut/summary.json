@@ -1,0 +1,10 @@
+{
+ "run_name": "A5_poolshortcut",
+ "params": 4949514,
+ "epochs": 30,
+ "best_epoch": 28,
+ "best_val_acc": 0.9446,
+ "final_val_acc": 0.9444,
+ "final_train_acc": 0.9787882834757835,
+ "total_time_min": 21.55980583031972
+}
