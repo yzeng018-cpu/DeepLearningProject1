@@ -1,0 +1,10 @@
+{
+ "run_name": "B5_ls0",
+ "params": 4949514,
+ "epochs": 30,
+ "best_epoch": 30,
+ "best_val_acc": 0.94,
+ "final_val_acc": 0.94,
+ "final_train_acc": 0.9723780270655271,
+ "total_time_min": 8.259466175238291
+}

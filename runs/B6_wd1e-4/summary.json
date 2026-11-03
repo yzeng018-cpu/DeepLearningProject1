@@ -1,0 +1,10 @@
+{
+ "run_name": "B6_wd1e-4",
+ "params": 4949514,
+ "epochs": 30,
+ "best_epoch": 29,
+ "best_val_acc": 0.9426,
+ "final_val_acc": 0.941,
+ "final_train_acc": 0.9781650641025641,
+ "total_time_min": 8.339663636684417
+}

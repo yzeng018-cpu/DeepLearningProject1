@@ -1,0 +1,36 @@
+run: B4_mixup  (/content/drive/MyDrive/kaggle_DL_output/runs/B4_mixup)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.1, "momentum": 0.9, "weight_decay": 0.0005, "label_smoothing": 0.1, "cutout": 8, "val_frac": 0.1, "seed": 42, "run_name": "B4_mixup", "runs_dir": "/content/drive/MyDrive/kaggle_DL_output/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 240], "blocks": [2, 2, 2, 2], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "sgd", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.2, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": false, "ckpt_every": 1, "allow_over_budget": false}
+device=cuda  train=45000  val=5000
+Trainable parameters: 4,949,514
+epoch=1  lr=0.0152  train_loss=1.7677  train_acc=0.2731  time=15.5416  val_acc=0.4684  val_loss=1.5378
+epoch=2  lr=0.0437  train_loss=1.5108  train_acc=0.3556  time=15.5440  val_acc=0.7018  val_loss=0.9116
+epoch=3  lr=0.0761  train_loss=1.4036  train_acc=0.3851  time=16.4823  val_acc=0.7012  val_loss=0.9219
+epoch=4  lr=0.0971  train_loss=1.3123  train_acc=0.4353  time=18.1336  val_acc=0.6884  val_loss=0.9464
+epoch=5  lr=0.0999  train_loss=1.2953  train_acc=0.4445  time=16.7006  val_acc=0.7782  val_loss=0.7279
+epoch=6  lr=0.0991  train_loss=1.2314  train_acc=0.4602  time=16.3093  val_acc=0.7646  val_loss=0.7757
+epoch=7  lr=0.0976  train_loss=1.2189  train_acc=0.4396  time=16.2974  val_acc=0.7896  val_loss=0.7549
+epoch=8  lr=0.0954  train_loss=1.1621  train_acc=0.4506  time=16.9630  val_acc=0.8268  val_loss=0.6942
+epoch=9  lr=0.0925  train_loss=1.1364  train_acc=0.4418  time=17.0206  val_acc=0.8344  val_loss=0.5914
+epoch=10  lr=0.0889  train_loss=1.1155  train_acc=0.4832  time=16.7303  val_acc=0.8284  val_loss=0.6551
+epoch=11  lr=0.0848  train_loss=1.1069  train_acc=0.4634  time=16.4393  val_acc=0.8436  val_loss=0.5789
+epoch=12  lr=0.0801  train_loss=1.0952  train_acc=0.4771  time=16.7999  val_acc=0.8358  val_loss=0.5878
+epoch=13  lr=0.0750  train_loss=1.0989  train_acc=0.4591  time=16.6220  val_acc=0.8582  val_loss=0.5195
+epoch=14  lr=0.0695  train_loss=1.1073  train_acc=0.4984  time=16.7345  val_acc=0.8398  val_loss=0.5814
+epoch=15  lr=0.0637  train_loss=1.0836  train_acc=0.4968  time=16.6209  val_acc=0.8676  val_loss=0.5434
+epoch=16  lr=0.0577  train_loss=1.0399  train_acc=0.4662  time=16.6468  val_acc=0.8276  val_loss=0.6199
+epoch=17  lr=0.0515  train_loss=1.0261  train_acc=0.4927  time=16.9438  val_acc=0.8648  val_loss=0.5504
+epoch=18  lr=0.0454  train_loss=1.0412  train_acc=0.4760  time=16.5826  val_acc=0.8696  val_loss=0.4866
+epoch=19  lr=0.0393  train_loss=1.0201  train_acc=0.4884  time=16.5668  val_acc=0.8790  val_loss=0.4595
+epoch=20  lr=0.0334  train_loss=1.0281  train_acc=0.4962  time=16.7409  val_acc=0.8800  val_loss=0.4616
+epoch=21  lr=0.0277  train_loss=1.0020  train_acc=0.4805  time=16.4637  val_acc=0.8832  val_loss=0.4354
+epoch=22  lr=0.0224  train_loss=0.9899  train_acc=0.5227  time=16.5253  val_acc=0.9012  val_loss=0.4393
+epoch=23  lr=0.0175  train_loss=0.9846  train_acc=0.4827  time=16.5204  val_acc=0.9110  val_loss=0.4007
+epoch=24  lr=0.0130  train_loss=0.9926  train_acc=0.4766  time=16.5995  val_acc=0.9156  val_loss=0.3867
+epoch=25  lr=0.0092  train_loss=0.9558  train_acc=0.4777  time=17.0628  val_acc=0.9120  val_loss=0.3813
+epoch=26  lr=0.0059  train_loss=0.9330  train_acc=0.4815  time=16.4525  val_acc=0.9294  val_loss=0.3377
+epoch=27  lr=0.0034  train_loss=0.9213  train_acc=0.5568  time=16.4692  val_acc=0.9346  val_loss=0.2987
+epoch=28  lr=0.0015  train_loss=0.8774  train_acc=0.5410  time=17.0333  val_acc=0.9380  val_loss=0.3271
+epoch=29  lr=0.0004  train_loss=0.8790  train_acc=0.5666  time=16.7436  val_acc=0.9416  val_loss=0.3282
+epoch=30  lr=0.0000  train_loss=0.8611  train_acc=0.5614  time=16.4254  val_acc=0.9432  val_loss=0.3032
+Best val acc: 0.9432 (epoch 30)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/B4_mixup. Next: python predict.py --run-name B4_mixup

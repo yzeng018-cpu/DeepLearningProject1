@@ -1,0 +1,10 @@
+{
+ "run_name": "B8_ep60",
+ "params": 4949514,
+ "epochs": 60,
+ "best_epoch": 58,
+ "best_val_acc": 0.9528,
+ "final_val_acc": 0.9528,
+ "final_train_acc": 0.9920094373219374,
+ "total_time_min": 15.863201399644216
+}
