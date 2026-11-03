@@ -1,0 +1,36 @@
+run: B6_wd1e-4  (/content/drive/MyDrive/kaggle_DL_output/runs/B6_wd1e-4)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.1, "momentum": 0.9, "weight_decay": 0.0001, "label_smoothing": 0.1, "cutout": 8, "val_frac": 0.1, "seed": 42, "run_name": "B6_wd1e-4", "runs_dir": "/content/drive/MyDrive/kaggle_DL_output/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 240], "blocks": [2, 2, 2, 2], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "sgd", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": false, "ckpt_every": 1, "allow_over_budget": false}
+device=cuda  train=45000  val=5000
+Trainable parameters: 4,949,514
+epoch=1  lr=0.0152  train_loss=1.6374  train_acc=0.4698  time=16.1767  val_acc=0.5336  val_loss=1.3463
+epoch=2  lr=0.0437  train_loss=1.3126  train_acc=0.6373  time=16.0452  val_acc=0.6946  val_loss=0.8858
+epoch=3  lr=0.0761  train_loss=1.1508  train_acc=0.7157  time=17.4989  val_acc=0.7350  val_loss=0.8054
+epoch=4  lr=0.0971  train_loss=1.0561  train_acc=0.7574  time=17.4976  val_acc=0.7858  val_loss=0.6745
+epoch=5  lr=0.0999  train_loss=0.9837  train_acc=0.7918  time=16.5432  val_acc=0.8326  val_loss=0.5506
+epoch=6  lr=0.0991  train_loss=0.9315  train_acc=0.8145  time=16.1756  val_acc=0.8174  val_loss=0.5879
+epoch=7  lr=0.0976  train_loss=0.8929  train_acc=0.8313  time=16.6911  val_acc=0.8228  val_loss=0.5918
+epoch=8  lr=0.0954  train_loss=0.8568  train_acc=0.8469  time=16.9064  val_acc=0.8650  val_loss=0.4602
+epoch=9  lr=0.0925  train_loss=0.8290  train_acc=0.8610  time=16.4704  val_acc=0.8324  val_loss=0.5489
+epoch=10  lr=0.0889  train_loss=0.8100  train_acc=0.8686  time=16.8814  val_acc=0.8764  val_loss=0.4220
+epoch=11  lr=0.0848  train_loss=0.7912  train_acc=0.8742  time=16.7853  val_acc=0.8338  val_loss=0.5164
+epoch=12  lr=0.0801  train_loss=0.7717  train_acc=0.8832  time=16.9592  val_acc=0.8620  val_loss=0.4687
+epoch=13  lr=0.0750  train_loss=0.7544  train_acc=0.8895  time=16.7609  val_acc=0.8582  val_loss=0.4673
+epoch=14  lr=0.0695  train_loss=0.7431  train_acc=0.8955  time=16.4195  val_acc=0.8850  val_loss=0.4032
+epoch=15  lr=0.0637  train_loss=0.7296  train_acc=0.9020  time=16.7806  val_acc=0.8924  val_loss=0.3802
+epoch=16  lr=0.0577  train_loss=0.7150  train_acc=0.9076  time=16.7959  val_acc=0.9058  val_loss=0.3522
+epoch=17  lr=0.0515  train_loss=0.7025  train_acc=0.9129  time=16.4706  val_acc=0.9024  val_loss=0.3617
+epoch=18  lr=0.0454  train_loss=0.6894  train_acc=0.9204  time=16.6140  val_acc=0.9048  val_loss=0.3618
+epoch=19  lr=0.0393  train_loss=0.6766  train_acc=0.9242  time=16.7077  val_acc=0.8928  val_loss=0.3849
+epoch=20  lr=0.0334  train_loss=0.6626  train_acc=0.9296  time=16.7542  val_acc=0.9146  val_loss=0.3281
+epoch=21  lr=0.0277  train_loss=0.6509  train_acc=0.9356  time=16.5255  val_acc=0.9110  val_loss=0.3330
+epoch=22  lr=0.0224  train_loss=0.6385  train_acc=0.9415  time=16.4478  val_acc=0.9102  val_loss=0.3393
+epoch=23  lr=0.0175  train_loss=0.6220  train_acc=0.9487  time=16.4595  val_acc=0.9258  val_loss=0.2939
+epoch=24  lr=0.0130  train_loss=0.6085  train_acc=0.9567  time=16.9451  val_acc=0.9342  val_loss=0.2805
+epoch=25  lr=0.0092  train_loss=0.5966  train_acc=0.9605  time=16.7445  val_acc=0.9324  val_loss=0.2765
+epoch=26  lr=0.0059  train_loss=0.5847  train_acc=0.9657  time=16.7662  val_acc=0.9358  val_loss=0.2721
+epoch=27  lr=0.0034  train_loss=0.5739  train_acc=0.9712  time=16.4626  val_acc=0.9394  val_loss=0.2699
+epoch=28  lr=0.0015  train_loss=0.5671  train_acc=0.9742  time=16.6347  val_acc=0.9402  val_loss=0.2614
+epoch=29  lr=0.0004  train_loss=0.5615  train_acc=0.9770  time=16.9597  val_acc=0.9426  val_loss=0.2613
+epoch=30  lr=0.0000  train_loss=0.5583  train_acc=0.9782  time=16.4997  val_acc=0.9410  val_loss=0.2611
+Best val acc: 0.9426 (epoch 29)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/B6_wd1e-4. Next: python predict.py --run-name B6_wd1e-4

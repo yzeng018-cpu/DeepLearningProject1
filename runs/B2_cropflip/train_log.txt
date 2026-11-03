@@ -1,0 +1,36 @@
+run: B2_cropflip  (/content/drive/MyDrive/kaggle_DL_output/runs/B2_cropflip)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.1, "momentum": 0.9, "weight_decay": 0.0005, "label_smoothing": 0.1, "cutout": 0, "val_frac": 0.1, "seed": 42, "run_name": "B2_cropflip", "runs_dir": "/content/drive/MyDrive/kaggle_DL_output/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 240], "blocks": [2, 2, 2, 2], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "sgd", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": false, "ckpt_every": 1, "allow_over_budget": false}
+device=cuda  train=45000  val=5000
+Trainable parameters: 4,949,514
+epoch=1  lr=0.0152  train_loss=1.5868  train_acc=0.4982  time=15.1921  val_acc=0.4556  val_loss=1.7506
+epoch=2  lr=0.0437  train_loss=1.2358  train_acc=0.6723  time=14.3453  val_acc=0.6988  val_loss=0.8874
+epoch=3  lr=0.0761  train_loss=1.0893  train_acc=0.7433  time=15.1802  val_acc=0.7596  val_loss=0.7280
+epoch=4  lr=0.0971  train_loss=1.0051  train_acc=0.7821  time=15.3361  val_acc=0.7618  val_loss=0.7266
+epoch=5  lr=0.0999  train_loss=0.9444  train_acc=0.8102  time=16.2798  val_acc=0.7838  val_loss=0.6682
+epoch=6  lr=0.0991  train_loss=0.9000  train_acc=0.8297  time=17.4885  val_acc=0.7628  val_loss=0.7410
+epoch=7  lr=0.0976  train_loss=0.8682  train_acc=0.8428  time=16.9743  val_acc=0.8388  val_loss=0.5565
+epoch=8  lr=0.0954  train_loss=0.8422  train_acc=0.8546  time=16.2106  val_acc=0.8492  val_loss=0.5063
+epoch=9  lr=0.0925  train_loss=0.8206  train_acc=0.8617  time=16.3662  val_acc=0.8244  val_loss=0.5881
+epoch=10  lr=0.0889  train_loss=0.8051  train_acc=0.8692  time=16.5229  val_acc=0.8232  val_loss=0.5695
+epoch=11  lr=0.0848  train_loss=0.7905  train_acc=0.8762  time=16.7942  val_acc=0.8492  val_loss=0.5052
+epoch=12  lr=0.0801  train_loss=0.7756  train_acc=0.8814  time=16.5656  val_acc=0.8754  val_loss=0.4468
+epoch=13  lr=0.0750  train_loss=0.7617  train_acc=0.8898  time=16.6857  val_acc=0.8570  val_loss=0.4715
+epoch=14  lr=0.0695  train_loss=0.7507  train_acc=0.8936  time=16.5256  val_acc=0.8648  val_loss=0.4587
+epoch=15  lr=0.0637  train_loss=0.7409  train_acc=0.8970  time=16.4071  val_acc=0.8652  val_loss=0.4433
+epoch=16  lr=0.0577  train_loss=0.7269  train_acc=0.9031  time=16.3798  val_acc=0.8864  val_loss=0.4212
+epoch=17  lr=0.0515  train_loss=0.7194  train_acc=0.9064  time=16.8259  val_acc=0.8642  val_loss=0.4577
+epoch=18  lr=0.0454  train_loss=0.7052  train_acc=0.9123  time=16.5563  val_acc=0.8822  val_loss=0.4301
+epoch=19  lr=0.0393  train_loss=0.6950  train_acc=0.9168  time=16.7931  val_acc=0.8866  val_loss=0.4025
+epoch=20  lr=0.0334  train_loss=0.6799  train_acc=0.9226  time=16.6373  val_acc=0.8994  val_loss=0.3836
+epoch=21  lr=0.0277  train_loss=0.6632  train_acc=0.9306  time=16.5746  val_acc=0.9074  val_loss=0.3368
+epoch=22  lr=0.0224  train_loss=0.6453  train_acc=0.9395  time=16.5657  val_acc=0.9114  val_loss=0.3333
+epoch=23  lr=0.0175  train_loss=0.6306  train_acc=0.9452  time=16.5445  val_acc=0.9094  val_loss=0.3371
+epoch=24  lr=0.0130  train_loss=0.6113  train_acc=0.9547  time=16.6729  val_acc=0.9136  val_loss=0.3323
+epoch=25  lr=0.0092  train_loss=0.5891  train_acc=0.9641  time=16.8285  val_acc=0.9222  val_loss=0.3076
+epoch=26  lr=0.0059  train_loss=0.5698  train_acc=0.9726  time=16.3372  val_acc=0.9310  val_loss=0.2847
+epoch=27  lr=0.0034  train_loss=0.5523  train_acc=0.9801  time=16.3609  val_acc=0.9412  val_loss=0.2644
+epoch=28  lr=0.0015  train_loss=0.5399  train_acc=0.9864  time=16.6097  val_acc=0.9432  val_loss=0.2578
+epoch=29  lr=0.0004  train_loss=0.5329  train_acc=0.9891  time=16.7662  val_acc=0.9430  val_loss=0.2592
+epoch=30  lr=0.0000  train_loss=0.5281  train_acc=0.9919  time=16.7420  val_acc=0.9428  val_loss=0.2574
+Best val acc: 0.9432 (epoch 28)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/B2_cropflip. Next: python predict.py --run-name B2_cropflip

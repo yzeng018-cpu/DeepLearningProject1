@@ -1,0 +1,10 @@
+{
+ "run_name": "B1_noaug",
+ "params": 4949514,
+ "epochs": 30,
+ "best_epoch": 28,
+ "best_val_acc": 0.89,
+ "final_val_acc": 0.8886,
+ "final_train_acc": 0.9999777421652422,
+ "total_time_min": 8.175438038508098
+}

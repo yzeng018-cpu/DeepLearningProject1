@@ -1,0 +1,36 @@
+run: B1_noaug  (/content/drive/MyDrive/kaggle_DL_output/runs/B1_noaug)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.1, "momentum": 0.9, "weight_decay": 0.0005, "label_smoothing": 0.1, "cutout": 0, "val_frac": 0.1, "seed": 42, "run_name": "B1_noaug", "runs_dir": "/content/drive/MyDrive/kaggle_DL_output/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 240], "blocks": [2, 2, 2, 2], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "sgd", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": true, "no_flip": true, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": false, "ckpt_every": 1, "allow_over_budget": false}
+device=cuda  train=45000  val=5000
+Trainable parameters: 4,949,514
+epoch=1  lr=0.0152  train_loss=1.5058  train_acc=0.5389  time=16.2420  val_acc=0.5746  val_loss=1.2133
+epoch=2  lr=0.0437  train_loss=1.1365  train_acc=0.7239  time=14.2775  val_acc=0.7168  val_loss=0.8451
+epoch=3  lr=0.0761  train_loss=0.9945  train_acc=0.7910  time=14.4584  val_acc=0.7690  val_loss=0.7008
+epoch=4  lr=0.0971  train_loss=0.8997  train_acc=0.8334  time=14.9438  val_acc=0.7806  val_loss=0.6682
+epoch=5  lr=0.0999  train_loss=0.8235  train_acc=0.8674  time=15.7324  val_acc=0.8036  val_loss=0.6470
+epoch=6  lr=0.0991  train_loss=0.7618  train_acc=0.8939  time=16.7936  val_acc=0.7864  val_loss=0.6786
+epoch=7  lr=0.0976  train_loss=0.7168  train_acc=0.9136  time=17.7044  val_acc=0.8252  val_loss=0.5754
+epoch=8  lr=0.0954  train_loss=0.6754  train_acc=0.9296  time=16.6409  val_acc=0.8214  val_loss=0.5992
+epoch=9  lr=0.0925  train_loss=0.6476  train_acc=0.9426  time=16.0300  val_acc=0.8052  val_loss=0.6468
+epoch=10  lr=0.0889  train_loss=0.6338  train_acc=0.9480  time=16.4492  val_acc=0.8084  val_loss=0.6460
+epoch=11  lr=0.0848  train_loss=0.6162  train_acc=0.9558  time=16.6557  val_acc=0.8114  val_loss=0.6536
+epoch=12  lr=0.0801  train_loss=0.6042  train_acc=0.9613  time=16.4603  val_acc=0.8188  val_loss=0.6252
+epoch=13  lr=0.0750  train_loss=0.5906  train_acc=0.9668  time=16.7339  val_acc=0.8016  val_loss=0.6758
+epoch=14  lr=0.0695  train_loss=0.5842  train_acc=0.9697  time=16.5560  val_acc=0.8212  val_loss=0.5896
+epoch=15  lr=0.0637  train_loss=0.5716  train_acc=0.9748  time=16.4532  val_acc=0.8182  val_loss=0.6336
+epoch=16  lr=0.0577  train_loss=0.5642  train_acc=0.9776  time=16.6449  val_acc=0.8232  val_loss=0.6246
+epoch=17  lr=0.0515  train_loss=0.5611  train_acc=0.9787  time=16.5166  val_acc=0.8448  val_loss=0.5524
+epoch=18  lr=0.0454  train_loss=0.5474  train_acc=0.9840  time=16.6062  val_acc=0.8330  val_loss=0.5908
+epoch=19  lr=0.0393  train_loss=0.5403  train_acc=0.9870  time=16.6739  val_acc=0.8528  val_loss=0.5155
+epoch=20  lr=0.0334  train_loss=0.5288  train_acc=0.9918  time=16.4538  val_acc=0.8542  val_loss=0.5192
+epoch=21  lr=0.0277  train_loss=0.5203  train_acc=0.9949  time=16.5038  val_acc=0.8622  val_loss=0.5088
+epoch=22  lr=0.0224  train_loss=0.5160  train_acc=0.9960  time=16.5795  val_acc=0.8666  val_loss=0.4940
+epoch=23  lr=0.0175  train_loss=0.5074  train_acc=0.9988  time=16.6236  val_acc=0.8784  val_loss=0.4585
+epoch=24  lr=0.0130  train_loss=0.5031  train_acc=1.0000  time=16.6551  val_acc=0.8858  val_loss=0.4415
+epoch=25  lr=0.0092  train_loss=0.5022  train_acc=1.0000  time=16.3628  val_acc=0.8854  val_loss=0.4367
+epoch=26  lr=0.0059  train_loss=0.5018  train_acc=1.0000  time=16.3537  val_acc=0.8872  val_loss=0.4318
+epoch=27  lr=0.0034  train_loss=0.5018  train_acc=1.0000  time=16.4701  val_acc=0.8864  val_loss=0.4317
+epoch=28  lr=0.0015  train_loss=0.5017  train_acc=1.0000  time=16.5786  val_acc=0.8900  val_loss=0.4345
+epoch=29  lr=0.0004  train_loss=0.5017  train_acc=1.0000  time=16.8828  val_acc=0.8886  val_loss=0.4335
+epoch=30  lr=0.0000  train_loss=0.5016  train_acc=1.0000  time=16.4894  val_acc=0.8886  val_loss=0.4320
+Best val acc: 0.8900 (epoch 28)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/B1_noaug. Next: python predict.py --run-name B1_noaug

@@ -1,0 +1,36 @@
+run: B5_ls0  (/content/drive/MyDrive/kaggle_DL_output/runs/B5_ls0)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.1, "momentum": 0.9, "weight_decay": 0.0005, "label_smoothing": 0.0, "cutout": 8, "val_frac": 0.1, "seed": 42, "run_name": "B5_ls0", "runs_dir": "/content/drive/MyDrive/kaggle_DL_output/runs", "overwrite": false, "max_steps": 0, "widths": [64, 128, 256, 240], "blocks": [2, 2, 2, 2], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "sgd", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": false, "ckpt_every": 1, "allow_over_budget": false}
+device=cuda  train=45000  val=5000
+Trainable parameters: 4,949,514
+epoch=1  lr=0.0152  train_loss=1.4473  train_acc=0.4732  time=16.0156  val_acc=0.5760  val_loss=1.2415
+epoch=2  lr=0.0437  train_loss=1.0435  train_acc=0.6276  time=16.0516  val_acc=0.6652  val_loss=0.9827
+epoch=3  lr=0.0761  train_loss=0.8516  train_acc=0.7043  time=17.5739  val_acc=0.6788  val_loss=0.9821
+epoch=4  lr=0.0971  train_loss=0.7363  train_acc=0.7442  time=17.1785  val_acc=0.7902  val_loss=0.6051
+epoch=5  lr=0.0999  train_loss=0.6562  train_acc=0.7732  time=16.1638  val_acc=0.8198  val_loss=0.5361
+epoch=6  lr=0.0991  train_loss=0.5914  train_acc=0.7958  time=16.1524  val_acc=0.8058  val_loss=0.5756
+epoch=7  lr=0.0976  train_loss=0.5523  train_acc=0.8082  time=16.8524  val_acc=0.7374  val_loss=0.7727
+epoch=8  lr=0.0954  train_loss=0.5140  train_acc=0.8236  time=16.7230  val_acc=0.7832  val_loss=0.6949
+epoch=9  lr=0.0925  train_loss=0.4836  train_acc=0.8362  time=16.5109  val_acc=0.8392  val_loss=0.4837
+epoch=10  lr=0.0889  train_loss=0.4622  train_acc=0.8413  time=16.4680  val_acc=0.8350  val_loss=0.4852
+epoch=11  lr=0.0848  train_loss=0.4448  train_acc=0.8465  time=16.5157  val_acc=0.7366  val_loss=0.8729
+epoch=12  lr=0.0801  train_loss=0.4244  train_acc=0.8530  time=16.6421  val_acc=0.8510  val_loss=0.4442
+epoch=13  lr=0.0750  train_loss=0.3970  train_acc=0.8625  time=16.7864  val_acc=0.8606  val_loss=0.4122
+epoch=14  lr=0.0695  train_loss=0.3928  train_acc=0.8638  time=16.3765  val_acc=0.8582  val_loss=0.4453
+epoch=15  lr=0.0637  train_loss=0.3730  train_acc=0.8725  time=16.5814  val_acc=0.8572  val_loss=0.4123
+epoch=16  lr=0.0577  train_loss=0.3588  train_acc=0.8759  time=16.4149  val_acc=0.8764  val_loss=0.3540
+epoch=17  lr=0.0515  train_loss=0.3408  train_acc=0.8812  time=16.5435  val_acc=0.8682  val_loss=0.3968
+epoch=18  lr=0.0454  train_loss=0.3286  train_acc=0.8868  time=16.6103  val_acc=0.8878  val_loss=0.3409
+epoch=19  lr=0.0393  train_loss=0.3132  train_acc=0.8911  time=16.4065  val_acc=0.8770  val_loss=0.3666
+epoch=20  lr=0.0334  train_loss=0.2894  train_acc=0.9000  time=16.3811  val_acc=0.8928  val_loss=0.3300
+epoch=21  lr=0.0277  train_loss=0.2718  train_acc=0.9054  time=16.5433  val_acc=0.8940  val_loss=0.2975
+epoch=22  lr=0.0224  train_loss=0.2489  train_acc=0.9138  time=16.3486  val_acc=0.8986  val_loss=0.3114
+epoch=23  lr=0.0175  train_loss=0.2241  train_acc=0.9225  time=16.5399  val_acc=0.9210  val_loss=0.2524
+epoch=24  lr=0.0130  train_loss=0.2003  train_acc=0.9305  time=16.2834  val_acc=0.9156  val_loss=0.2599
+epoch=25  lr=0.0092  train_loss=0.1758  train_acc=0.9380  time=16.4120  val_acc=0.9096  val_loss=0.2596
+epoch=26  lr=0.0059  train_loss=0.1458  train_acc=0.9501  time=16.5106  val_acc=0.9310  val_loss=0.2252
+epoch=27  lr=0.0034  train_loss=0.1172  train_acc=0.9602  time=16.7201  val_acc=0.9356  val_loss=0.2120
+epoch=28  lr=0.0015  train_loss=0.0966  train_acc=0.9667  time=16.4839  val_acc=0.9378  val_loss=0.2076
+epoch=29  lr=0.0004  train_loss=0.0851  train_acc=0.9704  time=16.5081  val_acc=0.9382  val_loss=0.1973
+epoch=30  lr=0.0000  train_loss=0.0797  train_acc=0.9724  time=16.2695  val_acc=0.9400  val_loss=0.1974
+Best val acc: 0.9400 (epoch 30)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/B5_ls0. Next: python predict.py --run-name B5_ls0

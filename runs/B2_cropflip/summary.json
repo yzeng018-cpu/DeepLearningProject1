@@ -1,0 +1,10 @@
+{
+ "run_name": "B2_cropflip",
+ "params": 4949514,
+ "epochs": 30,
+ "best_epoch": 28,
+ "best_val_acc": 0.9432,
+ "final_val_acc": 0.9428,
+ "final_train_acc": 0.991920405982906,
+ "total_time_min": 8.20114849805832
+}
