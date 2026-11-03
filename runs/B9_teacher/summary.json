@@ -1,0 +1,10 @@
+{
+ "run_name": "B9_teacher",
+ "params": 20797578,
+ "epochs": 30,
+ "best_epoch": 30,
+ "best_val_acc": 0.9488,
+ "final_val_acc": 0.9488,
+ "final_train_acc": 0.9825498575498576,
+ "total_time_min": 22.044633464018503
+}

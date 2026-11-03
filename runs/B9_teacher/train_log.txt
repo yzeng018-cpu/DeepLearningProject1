@@ -1,0 +1,36 @@
+run: B9_teacher  (/content/drive/MyDrive/kaggle_DL_output/runs/B9_teacher)
+config: {"epochs": 30, "batch_size": 128, "lr": 0.1, "momentum": 0.9, "weight_decay": 0.0005, "label_smoothing": 0.1, "cutout": 8, "val_frac": 0.1, "seed": 42, "run_name": "B9_teacher", "runs_dir": "/content/drive/MyDrive/kaggle_DL_output/runs", "overwrite": false, "max_steps": 0, "widths": [128, 256, 512, 512], "blocks": [2, 2, 2, 2], "width_mult": 1.0, "kernel": 3, "stem_kernel": 3, "block": "basic", "no_skip": false, "shortcut": "conv", "pool": "avg", "dropout": 0.0, "optimizer": "sgd", "sched": "onecycle", "warmup_epochs": 2, "ema": 0.0, "no_crop": false, "no_flip": false, "autoaug": "none", "mixup": 0.0, "cutmix": 0.0, "teacher": "", "kd_alpha": 0.5, "kd_T": 4.0, "resume": false, "ckpt_every": 1, "allow_over_budget": true}
+device=cuda  train=45000  val=5000
+Trainable parameters: 20,797,578
+epoch=1  lr=0.0152  train_loss=1.5853  train_acc=0.5020  time=37.2387  val_acc=0.6010  val_loss=1.2099
+epoch=2  lr=0.0437  train_loss=1.2789  train_acc=0.6568  time=40.7274  val_acc=0.6584  val_loss=0.9841
+epoch=3  lr=0.0761  train_loss=1.1348  train_acc=0.7258  time=46.1827  val_acc=0.7576  val_loss=0.7385
+epoch=4  lr=0.0971  train_loss=1.0499  train_acc=0.7641  time=44.0187  val_acc=0.7992  val_loss=0.6363
+epoch=5  lr=0.0999  train_loss=0.9868  train_acc=0.7910  time=44.8290  val_acc=0.8114  val_loss=0.5881
+epoch=6  lr=0.0991  train_loss=0.9368  train_acc=0.8123  time=44.4115  val_acc=0.7800  val_loss=0.6863
+epoch=7  lr=0.0976  train_loss=0.9071  train_acc=0.8245  time=44.1109  val_acc=0.7908  val_loss=0.6491
+epoch=8  lr=0.0954  train_loss=0.8762  train_acc=0.8387  time=45.1297  val_acc=0.8060  val_loss=0.6301
+epoch=9  lr=0.0925  train_loss=0.8540  train_acc=0.8494  time=43.8397  val_acc=0.7704  val_loss=0.7294
+epoch=10  lr=0.0889  train_loss=0.8406  train_acc=0.8554  time=44.4766  val_acc=0.8180  val_loss=0.5857
+epoch=11  lr=0.0848  train_loss=0.8240  train_acc=0.8609  time=44.9259  val_acc=0.8034  val_loss=0.6082
+epoch=12  lr=0.0801  train_loss=0.8071  train_acc=0.8689  time=44.0410  val_acc=0.8518  val_loss=0.4959
+epoch=13  lr=0.0750  train_loss=0.7948  train_acc=0.8736  time=44.6574  val_acc=0.8104  val_loss=0.6046
+epoch=14  lr=0.0695  train_loss=0.7882  train_acc=0.8771  time=44.6592  val_acc=0.8662  val_loss=0.4532
+epoch=15  lr=0.0637  train_loss=0.7750  train_acc=0.8817  time=44.1215  val_acc=0.8818  val_loss=0.4091
+epoch=16  lr=0.0577  train_loss=0.7622  train_acc=0.8876  time=44.4910  val_acc=0.8962  val_loss=0.3862
+epoch=17  lr=0.0515  train_loss=0.7471  train_acc=0.8933  time=44.6911  val_acc=0.8854  val_loss=0.4161
+epoch=18  lr=0.0454  train_loss=0.7363  train_acc=0.8992  time=43.9457  val_acc=0.8894  val_loss=0.3875
+epoch=19  lr=0.0393  train_loss=0.7279  train_acc=0.9016  time=44.6527  val_acc=0.8938  val_loss=0.3765
+epoch=20  lr=0.0334  train_loss=0.7097  train_acc=0.9106  time=43.8917  val_acc=0.9064  val_loss=0.3472
+epoch=21  lr=0.0277  train_loss=0.6960  train_acc=0.9174  time=44.6287  val_acc=0.8964  val_loss=0.3855
+epoch=22  lr=0.0224  train_loss=0.6788  train_acc=0.9235  time=44.4690  val_acc=0.8948  val_loss=0.3779
+epoch=23  lr=0.0175  train_loss=0.6587  train_acc=0.9328  time=43.8748  val_acc=0.9220  val_loss=0.3025
+epoch=24  lr=0.0130  train_loss=0.6396  train_acc=0.9409  time=44.4686  val_acc=0.9206  val_loss=0.3006
+epoch=25  lr=0.0092  train_loss=0.6166  train_acc=0.9508  time=44.4594  val_acc=0.9230  val_loss=0.3006
+epoch=26  lr=0.0059  train_loss=0.5968  train_acc=0.9597  time=44.3659  val_acc=0.9386  val_loss=0.2557
+epoch=27  lr=0.0034  train_loss=0.5762  train_acc=0.9695  time=44.3898  val_acc=0.9400  val_loss=0.2542
+epoch=28  lr=0.0015  train_loss=0.5624  train_acc=0.9745  time=44.5020  val_acc=0.9468  val_loss=0.2466
+epoch=29  lr=0.0004  train_loss=0.5534  train_acc=0.9796  time=44.3561  val_acc=0.9484  val_loss=0.2421
+epoch=30  lr=0.0000  train_loss=0.5474  train_acc=0.9825  time=44.1216  val_acc=0.9488  val_loss=0.2420
+Best val acc: 0.9488 (epoch 30)
+Saved to /content/drive/MyDrive/kaggle_DL_output/runs/B9_teacher. Next: python predict.py --run-name B9_teacher
