@@ -1,0 +1,10 @@
+{
+ "run_name": "R5_wide_mixup",
+ "params": 4781374,
+ "epochs": 100,
+ "best_epoch": 100,
+ "best_val_acc": 0.961,
+ "final_val_acc": 0.961,
+ "final_train_acc": 0.5925480769230769,
+ "total_time_min": 49.442034089565276
+}
