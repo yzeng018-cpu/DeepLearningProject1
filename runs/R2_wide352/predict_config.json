@@ -1,0 +1,5 @@
+{
+ "ckpt": "best.pt",
+ "epoch": 97,
+ "tta": true
+}

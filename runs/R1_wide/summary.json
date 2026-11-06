@@ -1,0 +1,10 @@
+{
+ "run_name": "R1_wide",
+ "params": 4781374,
+ "epochs": 100,
+ "best_epoch": 99,
+ "best_val_acc": 0.9604,
+ "final_val_acc": 0.9596,
+ "final_train_acc": 0.9979745370370371,
+ "total_time_min": 49.47773272593816
+}

@@ -1,0 +1,10 @@
+{
+ "run_name": "R2_wide352",
+ "params": 4969818,
+ "epochs": 100,
+ "best_epoch": 97,
+ "best_val_acc": 0.9578,
+ "final_val_acc": 0.957,
+ "final_train_acc": 0.9979077635327636,
+ "total_time_min": 39.18907171885173
+}
