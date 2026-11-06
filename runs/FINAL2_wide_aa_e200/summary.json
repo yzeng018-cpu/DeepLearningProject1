@@ -1,0 +1,10 @@
+{
+ "run_name": "FINAL2_wide_aa_e200",
+ "params": 4781374,
+ "epochs": 200,
+ "best_epoch": 192,
+ "best_val_acc": 0.9698,
+ "final_val_acc": 0.9694,
+ "final_train_acc": 0.9694845085470085,
+ "total_time_min": 318.7326274792353
+}
