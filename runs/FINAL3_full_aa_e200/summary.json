@@ -1,0 +1,10 @@
+{
+ "run_name": "FINAL3_full_aa_e200",
+ "params": 4781374,
+ "epochs": 200,
+ "best_epoch": 200,
+ "best_val_acc": null,
+ "final_val_acc": null,
+ "final_train_acc": 0.9706730769230769,
+ "total_time_min": 357.7174313545227
+}
