@@ -1,0 +1,10 @@
+{
+ "run_name": "FINAL_wide3_e200",
+ "params": 4337370,
+ "epochs": 200,
+ "best_epoch": 193,
+ "best_val_acc": 0.9612,
+ "final_val_acc": 0.9596,
+ "final_train_acc": 0.9987535612535613,
+ "total_time_min": 232.90745090246202
+}
