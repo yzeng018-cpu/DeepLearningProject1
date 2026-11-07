@@ -1,0 +1,10 @@
+{
+ "run_name": "FINAL4_wide_aa_cutmix_e200",
+ "params": 4781374,
+ "epochs": 200,
+ "best_epoch": 191,
+ "best_val_acc": 0.9658,
+ "final_val_acc": 0.9658,
+ "final_train_acc": 0.7457487535612536,
+ "total_time_min": 322.6503565748533
+}
