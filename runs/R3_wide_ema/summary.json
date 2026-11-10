@@ -1,0 +1,10 @@
+{
+ "run_name": "R3_wide_ema",
+ "params": 4781374,
+ "epochs": 100,
+ "best_epoch": 90,
+ "best_val_acc": 0.9594,
+ "final_val_acc": 0.9592,
+ "final_train_acc": 0.9979745370370371,
+ "total_time_min": 47.20565897623698
+}

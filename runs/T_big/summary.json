@@ -1,0 +1,10 @@
+{
+ "run_name": "T_big",
+ "params": 20797578,
+ "epochs": 200,
+ "best_epoch": 179,
+ "best_val_acc": 0.9682,
+ "final_val_acc": 0.9652,
+ "final_train_acc": 0.9715767450142451,
+ "total_time_min": 166.391228779157
+}

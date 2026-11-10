@@ -1,0 +1,10 @@
+{
+ "run_name": "F1_seed42",
+ "params": 4781374,
+ "epochs": 200,
+ "best_epoch": 200,
+ "best_val_acc": null,
+ "final_val_acc": null,
+ "final_train_acc": 0.969891826923077,
+ "total_time_min": 154.92663997014364
+}

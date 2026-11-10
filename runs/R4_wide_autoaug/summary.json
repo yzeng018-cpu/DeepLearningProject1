@@ -1,0 +1,10 @@
+{
+ "run_name": "R4_wide_autoaug",
+ "params": 4781374,
+ "epochs": 100,
+ "best_epoch": 99,
+ "best_val_acc": 0.963,
+ "final_val_acc": 0.9624,
+ "final_train_acc": 0.9598023504273504,
+ "total_time_min": 68.06460628509521
+}
